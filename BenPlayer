@@ -1,0 +1,58 @@
+public class Player {
+        private String name;
+        private Card[] hand;
+        private double moneyLeft;
+        private boolean busted;
+        private int numberOfCards;
+        private int totalCardValue;
+
+
+
+
+
+        public Player(String nameParameter, double moneyLeftP, boolean bustedP, int numberOfCardsP, int  totalCardValueP){
+            this.hand = new Card[13];
+            this.name = nameParameter;
+            this.moneyLeft=moneyLeftP;
+            this.busted=bustedP;
+            this.numberOfCards=numberOfCardsP;
+            this.totalCardValue=totalCardValueP;
+
+        }
+
+        public int getTotal(){
+            return totalCardValue;
+        }
+
+        public int getNumberOfCards(){
+            return numberOfCards;
+        }
+        public boolean getBusted(){
+            return busted;
+        }
+
+        public double getMoneyLeft(){
+            return moneyLeft;
+        }
+
+        public String getName(){
+            return name;
+        }
+
+        public Card[] getHand(){
+            return hand;
+        }
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
