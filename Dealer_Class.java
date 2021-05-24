@@ -4,6 +4,7 @@ public class Dealer_Class {
 
     private DeckforFinal theDeck;
     private List<Cardforfinal> DealersHand;
+    private int points;
 
     public DeckforFinal getTheDeck() {
         return theDeck;
@@ -26,6 +27,10 @@ public class Dealer_Class {
 
     public void addToHand(Cardforfinal newCard){
         this.DealersHand.add(newCard);
+    }
+    
+    public int getPoints() {
+        return points;
     }
 
 
