@@ -33,10 +33,12 @@ public class Blackjack {
     }
 
      */
-    public void firstDeal(){
+     public void firstDeal(){
         for(int i = 0; i < amtOfPlayers; i++){
-            players[i].addToHand(dealer.DealaCard());
-            players[i].addToHand(dealer.DealaCard());
+            if(players[i].getHit()){
+                players[i].addToHand(dealer.DealaCard());
+                players[i].addToHand(dealer.DealaCard());
+            }
         }
     }
 
